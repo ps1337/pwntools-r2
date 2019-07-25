@@ -26,7 +26,7 @@ import shlex
 import os
 
 r2_python_template = """
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 import os, r2pipe
 r2 = r2pipe.open()
 

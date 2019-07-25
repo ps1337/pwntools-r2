@@ -1,8 +1,20 @@
-# pwntools_r2_tmux
+# pwntools-r2
 
-Launch `radare2` from `pwntools` via `tmux`. This *might* also work with other setups without `tmux` but that's not supported currently.
+Launch `radare2` from `pwntools`. This has been tested to work in combination with `tmux` - **other combinations may or may not work**. This *might* also work with other setups without `tmux` but that's not supported currently.
 
-Debug any errors with `context.log_level = 'DEBUG'` via your `pwntools` python script.
+## Ok How To Use This?
+
+- Create a new pipenv: `pipenv --python 2.7`
+- Install this: `pipenv install pwntools-r2`
+- Enter the virtual environment: `pipenv shell`
+- Do stuff: `python2.7 ./exploit.py`
+
+
+## Troubleshooting
+
+- You can debug any errors with `context.log_level = 'DEBUG'` via your `pwntools` python script.
+- If no terminal can be found, try setting `context.terminal` accordingly - e.g. to `urxvtc`
+
 
 # Credits
 
