@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-This enables use of radare2 for pwntools
+This enables using radare2 in combination with pwntools
 
-Automatic installtion: via pip
+Automatic installation: via pip
 
 Manual installation instructions:
 1. Download and save as "pwntools-gdb" somewhere in your PATH - e.g. from your working directory:
     `PATH=$PWD:$PATH`
 
 2. Run `chmod u+x pwntools-gdb`
-3. In your gdbscript over in pwntools, start lines with "#" that you want to get executed by radare2. For instance, to set a breakpoint automatically, you would use gdbscript="#r2.cmd('db sym.main')"
+3. In your r2script over in pwntools, start lines with "#" that you want to get executed by radare2. For instance, to set a breakpoint automatically, you would use r2script="#r2.cmd('db sym.main')"
 
 Pip Dependencies: pwntools r2pipe
 
