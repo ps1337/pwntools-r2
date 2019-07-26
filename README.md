@@ -4,6 +4,9 @@ Launch `radare2` from `pwntools`. This has been tested to work in combination wi
 
 ![alt text](https://github.com/ps1337/r/blob/master/pwntools-r2/pwntools-r2-demo.gif?raw=true)
 
+As of now, only the Python2 version of `pwntools` is being actively maintained.
+There's also a version for the unmaintained Python3 [fork](https://github.com/arthaud/python3-pwntools) of `pwntools` available in one of my other repos.
+
 ## Ok How To Use This?
 
 - Create a new pipenv: `pipenv --python 2.7`

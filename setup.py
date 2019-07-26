@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='pwntools-r2',
-    version='1.3.3.7',
+    version='1.3.3.8',
     scripts=['pwntools-gdb'] ,
     author="ps1337 / @CaptnBanana",
     author_email="ps1337@mailbox.org",
