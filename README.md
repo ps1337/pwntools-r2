@@ -19,6 +19,9 @@ A version for the currently unmaintained Python3 [fork](https://github.com/artha
 
 from pwntools_r2 import *
 
+# You might want to change this
+context.terminal = ['tmux', 'splitw', '-v']
+
 r2script = """
 #r2.cmd('db sym.main')
 #r2.cmd('aaa')
@@ -39,7 +42,7 @@ Please note that the commands for `r2` have to be prefixed with a `#`. If you wa
 ## Troubleshooting
 
 - You can debug any errors with `context.log_level = 'DEBUG'` via your `pwntools` python script.
-- If no terminal can be found, try setting `context.terminal` accordingly - e.g. to `urxvtc`
+- If no terminal can be found or any weird errors come up, try setting `context.terminal` accordingly - e.g. to `urxvtc` or  `['tmux', 'splitw', '-v']`
 
 
 # Credits
