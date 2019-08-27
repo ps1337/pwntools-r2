@@ -39,6 +39,15 @@ Please note that the commands for `r2` have to be prefixed with a `#`. If you wa
 - Do stuff: `python2.7 ./exploit.py`
 
 
+## Ok But How To Pass argv Values?
+
+- Write your payload to a temporary file before running the target process
+- Use this:
+
+```
+#r2.cmd('ood `!cat /tmp/payload`')
+```
+
 ## Troubleshooting
 
 - You can debug any errors with `context.log_level = 'DEBUG'` via your `pwntools` python script.
